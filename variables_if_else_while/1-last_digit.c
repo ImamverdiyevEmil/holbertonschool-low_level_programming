@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**
-    main - Determines either greater than 5, is less than 6, or is 0
 
- *
-
-    Return: Always 0 (Success)
-
- */
+ /**
+  * main - Determines either greater than 5, is less than 6, or is 0
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
-	int n, l;	srand(time(0));
+	int n, l;	
+
+        srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	l = n % 10;
 	if (l > 5)
@@ -28,4 +28,3 @@ int main(void)
 	}
 	return (0);
 }
-NEW
